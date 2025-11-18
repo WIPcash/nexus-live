@@ -60,3 +60,41 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url_here
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key_here
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key  # only on server
+
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+GROK_API_KEY=  # for AI moderation
+
+{
+  "name": "nexus-live",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "next": "15.0.0-rc.0",
+    "react": "^19.0.0-rc-f38c22b244-20240704",
+    "react-dom": "^19.0.0-rc-f38c22b244-20240704"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.0-rc.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
